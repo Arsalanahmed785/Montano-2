@@ -91,8 +91,9 @@ nav li :hover{
  
 .section-1 {    
     height: 630px;
-    padding: 70px 0;
+    padding: 70px 20px;
     margin-top: 40px;
+    height: auto;
  } 
  
 .section-1 h4 {
@@ -114,11 +115,12 @@ nav li :hover{
 .section-1 .img-sec{
    display: flex;
    gap: 20px;
+   flex-wrap: wrap;
  }
   
-.section-1 .img-sec img {
+.section-1  img {
     height: 400px;
-    width: 50%;    
+    width: 100%;    
     border-radius: 15px;
     box-shadow: 8px 8px 12px;    
     transition: 1.5s;    
@@ -225,8 +227,7 @@ video{
    box-shadow: 10px 10px 10px;
 }  
 
-.section-2 .food{
-  /* padding: 15px; */
+.section-2 .food{ 
   margin-top: 10px;   
   border-radius: 15px;  
 }
@@ -279,7 +280,7 @@ video{
    animation: abd 4s infinite 2s;
 }
 @keyframes abd{
-   from{margin-left: 120px; color: rgb(255, 255, 255);}
+   from{margin-left: 120px; color: rgb(255, 255, 255); font-size: 0.9rem;}
    to{right: 00px; color:#1d89f5;}
 }
 .section-3{
@@ -351,18 +352,14 @@ span{
 }
 .card-section-2{
    height: auto;
+   padding: 0 12px;
 }
- #flex2{
-   display: flex;
-   height: 400px;
-   position: relative;
-   overflow: hidden;
-   padding: 0;   
-}
-.abc {
+
+.abc{
    height: 400px;
    width: 100%;
    border-radius: 10px;
+   position: relative;
    overflow: hidden;
 }
 
@@ -376,22 +373,20 @@ span{
   height: 400px;
   width: 100%;   
   background-color: rgba(255, 255, 255, 0.2); 
-  position: absolute;
-  top: 0;
-  top: -400px;
+  position: absolute;  
+  top: 400px;
   border-radius: 10px;  
   transition: 0.7s;      
 }
 .opacity i{
    position: absolute;
    top: 45%;
-   left: 170px;
+   left: 43%;
    color: white;
 }
-
  .abc:hover .opacity{   
    left: 0; 
-   top: -0px;
+   top: 0px;
   cursor: pointer; 
 }
 
@@ -411,16 +406,15 @@ span{
    width:  100%;
    position: absolute;
    top: 0px;   
-   left: 380px;
+   left: 400px;
    background-color: rgba(255, 255, 255, 0.2); 
    border-radius: 10px;
    transition: 0.7s;     
 }
-
 .opacity2 i{
    position: absolute;
    top: 45%;
-   left: 170px;
+   left: 43%;
    color: white;
 }
 
@@ -455,7 +449,7 @@ span{
 .opacity3 i{
    position: absolute;
    top: 45%;
-   left: 170px;
+   left: 43%;
    color: white;
 }
 
@@ -465,11 +459,9 @@ span{
    transition: 1s;
 }
 
-#flex2 .hij:hover img{
+.hij:hover img{
    transform: scale(1.1);
 }
-
-
 .jkl{
    height: 400px;
    width: 100%;
@@ -483,14 +475,14 @@ span{
    width:  100%;
    position: absolute;
    top: 0; 
-   right: 380px;             
+   right: 400px;             
    background-color: rgba(255, 255, 255, 0.2); 
    border-radius: 10px;
 }
 .opacity4 i{
    position: absolute;
    top: 45%;
-   left: 170px;
+   left: 43%;
    color: white;
 }
 .jkl:hover .opacity4{
@@ -498,7 +490,7 @@ span{
    cursor: pointer;
 }
 
-#flex2 .jkl:hover img{
+.jkl:hover img{
    transform: scale(1.1);
 }
 
