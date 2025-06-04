@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Montana Hotal</title>
     
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css2/css/bootstrap.min.css">
-    <script src="js/bootstrap.bundle.js"></script>
+    <script src="css2/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="css2/style.css">
+    <link rel="stylesheet" href="responsive/responsive.css">
 </head>
 
 <body>    
@@ -17,17 +18,19 @@
                 <nav>
                     <div class="container">
                     
-                <ul class="nav-list">
+                <ul class="nav-list" id="navList">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Rooms</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Pages</a></li>
                     <li><a href="#">Contact</a></li>
-                <button>BOOK A ROOM</button></ul></div>
+                <div class="text-center"><button>BOOK A ROOM</button></div></ul></div>
                 
-                   
+                 <div class="hamburger" onclick="toggleMenu()">☰</div>
+  
                 </nav>
+
              <div class="container"><div class="row">
                 <div class="col-md-12  text-center"><h1>Life Is Beautiful</h1></div>
              </div>
@@ -74,7 +77,7 @@
                     <li>Sea view side</li>
                 </ul>
             </div>
-           <div class=""><button>BOOK NOW</button></div>
+           <div class="center"><button>BOOK NOW</button></div>
         </div>
         </div>
         </div>
@@ -91,7 +94,7 @@
                     <li>Sea view side</li>
                 </ul>
             </div>
-           <div class=""><button>BOOK NOW</button></div>
+           <div class="center"><button>BOOK NOW</button></div>
         </div>
         </div>
 </div>
@@ -108,7 +111,7 @@
                     <li>Sea view side</li>
                 </ul>
             </div>
-           <div class=""><button>BOOK NOW</button></div>
+           <div class="center"><button>BOOK NOW</button></div>
         </div>
         </div>
 </div>
@@ -119,7 +122,7 @@
 <div class="section-2">
    <div class="container">      
         <div class="row">
-            <div class="col-md-12"><video poster="images/city-night.jpg" controls autoplay muted>
+            <div class="col-md-12"><video poster="images/city-night.jpg" controls>
             <source src="videos/Workman Ranch_ 275.29 acres.mp4">
         </video></div>
         </div>
@@ -158,37 +161,35 @@
     </div>   
 </div>
 
-<div class="contact">
-     <div class="container text-center"><div class="row">
-        <div class="col-md-6 offset-md-3 "><div id="reserve" class="">
-        <div>For Reservation 0r Query?</div><div id="number">92-3492966709</div>
-        
+<div class="contact align-content-center ">
+     <div class="container text-center"><div class="row text-center">
+        <div class="col-md-12 text-center text-xxl-center"><div class="reserve" class="">
+        <b>For Reservation 0r Query?</b><button>92-3492966709</button>        
     </div></div>
      </div>
      </div>
 </div>
 
-<div class="card-section-2">
-    
+<div class="card-section-2">    
 
     <div class="row">
         
-        <div class="col-md-3 p-1"><div class="abc"><img src="images/Montage-Big-Sky-89.webp" alt="">
-            <div class="opacity"><i class="fa-brands fa-instagram fa-3x">                
+        <div class="col-md-3 p-1"><div class="abc height"><img src="images/Montage-Big-Sky-89.webp" alt="">
+            <div class="opacity height"><i class="fa-brands fa-instagram fa-3x absolute" class="absolute">                
             </i>
             </div>
         </div></div>
 
-        <div class="col-md-3 p-1"> <div class="efg"><img src="images/MBS-3-SPA-POOL-02-3117-A.jpg" alt="">
-            <div class="opacity2"><i class="fa-brands fa-instagram fa-3x" ></i></div>
+        <div class="col-md-3 p-1"> <div class="efg height"><img src="images/MBS-3-SPA-POOL-02-3117-A.jpg" alt="">
+            <div class="opacity2 height"><i class="fa-brands fa-instagram fa-3x absolute" class="absolute" ></i></div>
         </div></div>
 
-        <div class="col-md-3 p-1"> <div class="hij"><img src="images/440010373.jpg" alt="">
-            <div class="opacity3"><i class="fa-brands fa-instagram fa-3x"></i></div>
+        <div class="col-md-3 p-1"> <div class="hij height"><img src="images/440010373.jpg" alt="">
+            <div class="opacity3 height"><i class="fa-brands fa-instagram fa-3x absolute" class="absolute"></i></div>
         </div></div>
 
-        <div class="col-md-3 p-1"><div class="jkl"><img src="images/SPA-Image-2021-06-14-at-20.18.30-1024x576.jpeg" alt="">
-            <div class="opacity4"><i class="fa-brands fa-instagram fa-3x"></i></div>
+        <div class="col-md-3 p-1"><div class="jkl height"><img src="images/SPA-Image-2021-06-14-at-20.18.30-1024x576.jpeg" alt="">
+            <div class="opacity4 height"><i class="fa-brands fa-instagram fa-3x absolute" class="absolute"></i></div>
         </div></div>
       
     </div>
@@ -206,8 +207,10 @@
             </div>
         </div>
         <div class="col-md-3">
-            <h3 class="">Reservation</h3><div class="website">92-3492966709<br><br>
-                reservation@montana.com</div>
+            <h3 class="">Reservation</h3><div class="website">92-3492966709</div>
+                <div class="row">
+                    <div class="col-md-12"><h5>reservation@montana.com</h5></div>
+                </div>
         </div>
         <div class="col-md-3">
             <h3 class="">Navigation</h3>
@@ -245,7 +248,7 @@
 
 
      
-    <script src="java script/my.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

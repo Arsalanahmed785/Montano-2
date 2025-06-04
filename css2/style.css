@@ -57,9 +57,6 @@ nav li :hover{
                  0px 0px 05px black;
 }
 
-.menu{
-   display: none;
-}
 .bg-img h1{
    margin-top: 120px;
     font-size: 7em;
@@ -88,7 +85,19 @@ nav li :hover{
    color: cyan;   
    cursor: pointer;
  }
- 
+nav .hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  position: absolute; 
+  top: 0;
+  right: 20px;
+  z-index: 1001;
+  user-select: none;
+  background-color: transparent;
+}
 .section-1 {    
     height: 630px;
     padding: 70px 20px;
@@ -141,16 +150,6 @@ nav li :hover{
     animation-direction: alternate;
     animation-delay: 1s;
  }
-
-/* @keyframes aaa{
-   from{margin-left: 0px; transition: 5s; opacity: 0;}
-   to{margin-left: 500px;
-   transition: 5s;}
-   to{
-      z-index: 100;
-   }
-
-}  */
  .card-section h6 {
     font-size: 2em;    
     color: #1d89f5;    
@@ -264,7 +263,7 @@ video{
 }
 
 .section-2 h1{   
-   font-size: 3.5rem;
+   font-size: 3rem;
    margin-top: 50px;   
    text-shadow: 05px 05px 05px;
 }
@@ -280,8 +279,8 @@ video{
    animation: abd 4s infinite 2s;
 }
 @keyframes abd{
-   from{margin-left: 120px; color: rgb(255, 255, 255); font-size: 0.9rem;}
-   to{right: 00px; color:#1d89f5;}
+   from{margin-left: 110px; color: rgb(255, 255, 255); font-size: 0.8rem;}
+   to{right: 00px; color:#1d89f5; font-size: 1rem;}
 }
 .section-3{
    padding: 20px;
@@ -321,31 +320,36 @@ span{
 .contact{
    height: 300px;
    padding: 50px;
-   /* text-align: center; */
+   text-align: center;
    align-items: center;
 }
-.contact #reserve{
+.contact .reserve{
    height: 100px;
-   width: 100%;
+   width: 55%;
    border: black solid 0.1px;  
-   border-radius: 10px;
-   font-size: 25px;
+   border-radius: 10px;  
    padding: 10px;
-   display: flex;
+   display: flex;   
    align-items: center;
    gap: 110px;
+   margin: auto;
 }
+.contact b{
+   font-size: 1.5rem;
 
-.contact #number{
+}
+.contact button{
    height: 40px;
    width: 35%;
+   background-color: white;
    font-size: 1.5rem;
    border: #2784f6 solid 1px;
    border-radius: 20px;
-   color: #2784f6;    
+   color: #2784f6;  
+   margin: auto;  
    transition: 0.5s; 
 }
-#number:hover{
+.contact button:hover{
    background-color: #2784f6; 
    color: white;
    cursor: pointer;
@@ -378,12 +382,6 @@ span{
   border-radius: 10px;  
   transition: 0.7s;      
 }
-.opacity i{
-   position: absolute;
-   top: 45%;
-   left: 43%;
-   color: white;
-}
  .abc:hover .opacity{   
    left: 0; 
    top: 0px;
@@ -411,7 +409,7 @@ span{
    border-radius: 10px;
    transition: 0.7s;     
 }
-.opacity2 i{
+.card-section-2 i{
    position: absolute;
    top: 45%;
    left: 43%;
@@ -446,13 +444,6 @@ span{
   transition: 0.7s;   
 }
 
-.opacity3 i{
-   position: absolute;
-   top: 45%;
-   left: 43%;
-   color: white;
-}
-
 .hij:hover .opacity3{
    margin-top: 0px;
    cursor: pointer;
@@ -479,17 +470,11 @@ span{
    background-color: rgba(255, 255, 255, 0.2); 
    border-radius: 10px;
 }
-.opacity4 i{
-   position: absolute;
-   top: 45%;
-   left: 43%;
-   color: white;
-}
+
 .jkl:hover .opacity4{
    right: 0;
    cursor: pointer;
 }
-
 .jkl:hover img{
    transform: scale(1.1);
 }
@@ -516,7 +501,7 @@ footer .footer1 p{
 b{  
    transition: 0.5s;   
 }
- b::after{
+footer b::after{
    content: "";
    width: 127px;
    height: 3px;
@@ -527,19 +512,25 @@ b{
    top: 100%;
    transition: 0.5s;
 }
-b:hover{
+footer b:hover{
    color: #1d89f5;
    cursor: pointer;
 }
 
-b:hover::after{
+footer b:hover::after{
    background-color: #1d89f5;
    color: #1d89f5;
    cursor: pointer;
 }
 .website{
-   font-size: 20px;
+   font-size: 1.2rem;
    color: white;  
+   margin-bottom: 25px;
+}
+footer h5{
+   font-size: 1.2rem;
+   color: white;
+   word-wrap: break-word;   
 }
 
 .Navigation{
@@ -588,7 +579,9 @@ footer .p-2{
    font-size: 1.5rem;
    margin: 0; 
 }
-
+footer hr{
+   color: white;
+}
 .Copyright{
    color: white;
    margin-top: 20px;
@@ -599,9 +592,7 @@ footer .p-2{
    content: "ARSALAN";
    color: #1d89f5;
 }
-footer hr{
-   color: white;
-}
+
 footer .icon{    
    color: white;  
    display: flex; 
